@@ -5,9 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cake_House"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720
-        " Width="1280">
+        Title="MainWindow" Height="720" Width="1280"
+        Background="#DECAFC">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="10"
+                                Background="{TemplateBinding Background}">
+
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
     <Grid>
-        <Label Content="hello" HorizontalAlignment="Left" Margin="138,65,0,0" VerticalAlignment="Top"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Rectangle Fill="#473366" Width="1280" Height="60"></Rectangle>
+        <StackPanel Orientation="Horizontal">            
+            <Button Content="About us" Foreground="Black" FontFamily="Monotype Corsiva" FontSize="22" Width="90" Height="35" Margin="10,0,0,0" Background="#E1BD77"/>
+            <Button Content="Our reviews" Foreground="Black" FontFamily="Monotype Corsiva" FontSize="22" Width="150" Height="35" Margin="10,0,0,0" Background="#E1BD77"/>
+            <Button Content="Order for a date" Foreground="Black" FontFamily="Monotype Corsiva" FontSize="22" Width="170" Height="35" Margin="10,0,0,0" Background="#E1BD77"/>
+            <Label Content="Cake House" Foreground="#E1BD77" FontFamily="Monotype Corsiva" FontSize="40" Width="auto" Height="60" Margin="110,0,0,0" />
+            <StackPanel Orientation="Horizontal" Width="540" FlowDirection="RightToLeft">
+                <Button Content="Log in" Foreground="Black" FontFamily="Monotype Corsiva" FontSize="22" Width="65" Height="35"  Background="#E1BD77" Margin="10,0,10,0"/>
+                <Button Content="Order for a date" Foreground="Black" FontFamily="Monotype Corsiva" FontSize="22" Width="170" Height="35" Margin="0,0,10,0" Background="#E1BD77"/>
+                <Label Content="username" Foreground="#E1BD77" FontFamily="Monotype Corsiva" FontSize="40" Width="auto" Height="60" Margin="0,0,10,0" />
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>
