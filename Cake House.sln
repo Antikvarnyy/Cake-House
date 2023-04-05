@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake House", "Cake House\Ca
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Recource", "Recource", "{16E14070-8890-4BE4-816F-BA968C8D7F96}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Admin", "Admin\Admin.csproj", "{8F74AD9F-FA99-4381-B9FE-B67F556BF3EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{90D5FDBE-E09C-4CA2-ACF0-BFF5AB30BAF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90D5FDBE-E09C-4CA2-ACF0-BFF5AB30BAF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90D5FDBE-E09C-4CA2-ACF0-BFF5AB30BAF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F74AD9F-FA99-4381-B9FE-B67F556BF3EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F74AD9F-FA99-4381-B9FE-B67F556BF3EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F74AD9F-FA99-4381-B9FE-B67F556BF3EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F74AD9F-FA99-4381-B9FE-B67F556BF3EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
