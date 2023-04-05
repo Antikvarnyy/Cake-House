@@ -26,7 +26,7 @@
             <RowDefinition Height="60"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <Rectangle Fill="#473366" Width="1280" Height="60"></Rectangle>
+        <Rectangle Fill="#473366" Width="1280" Height="60"></Rectangle>        
         <StackPanel Orientation="Horizontal">            
             <Button Content="About us" Foreground="Black" FontFamily="Monotype Corsiva" FontSize="22" Width="90" Height="35" Margin="10,0,0,0" Background="#E1BD77"/>
             <Button Content="Our reviews" Foreground="Black" FontFamily="Monotype Corsiva" FontSize="22" Width="150" Height="35" Margin="10,0,0,0" Background="#E1BD77"/>
@@ -54,9 +54,13 @@
                            TextWrapping="Wrap" FontFamily="Monotype Corsiva" FontSize="29" Width="650">
                 </TextBlock>
             </StackPanel>
-            <StackPanel Orientation="Horizontal">
-
-            </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Fill="#FDF5D3" Width="20" Height="50"></Rectangle>
+                    <ComboBox x:Name="Price" Width="200" Height="50" FontFamily="Monotype Corsiva" FontSize="34"/>
+                    <ComboBox x:Name="Category" Width="400" Height="50" FontFamily="Monotype Corsiva" FontSize="34"/>
+                    <ComboBox x:Name="Weight" Width="200" Height="50" FontFamily="Monotype Corsiva" FontSize="34"/>
+                    <TextBox Background="#FDF5D3" Foreground="Gray" Text="Search..." Height="50" Width="445" FontFamily="Monotype Corsiva" FontSize="50"></TextBox>
+                </StackPanel>
             </StackPanel>
         </ScrollViewer>
     </Grid>
