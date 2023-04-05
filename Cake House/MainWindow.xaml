@@ -41,5 +41,23 @@
                 <Label Content="username" Foreground="#E1BD77" FontFamily="Monotype Corsiva" FontSize="40" Width="auto" Height="60" Margin="0,0,10,0" />
             </StackPanel>
         </StackPanel>
+        <ScrollViewer Grid.Row="1">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" Height="auto" VerticalAlignment="Top">
+                <Image Source="Recources/Cake.png" Height="auto" Width="600" Stretch="Fill" StretchDirection="Both"></Image>
+                <TextBlock Text="Наша команда талантливых кондитеров использует только самые качественные ингредиенты для приготовления наших тортов.
+                           
+                           У нас также есть возможность заказать торт на особый случай - мы с удовольствием создадим индивидуальный дизайн торта, чтобы подчеркнуть тему вашей вечеринки или удовлетворить ваши индивидуальные предпочтения во вкусе и внешнем виде.
+                           
+                           
+                           Вы сможете выбрать идеальный торт для своего вкуса и нужд. Кроме того, мы также предлагаем торты без сахара для тех, кто следит за здоровьем."
+                           TextWrapping="Wrap" FontFamily="Monotype Corsiva" FontSize="29" Width="650">
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+
+            </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Window>
