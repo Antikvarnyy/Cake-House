@@ -37,7 +37,7 @@
                 <Button Name="bracket" Foreground="Black" FontFamily="Monotype Corsiva" FontSize="22" Width="35" Height="35" Margin="0,0,10,0" Background="#E1BD77" MouseEnter="Levitate" MouseLeave="Leave">
                     <Image Source="Recources/shopping-cart.png" Margin="5"></Image>
                 </Button>
-                <Label Content="username" Foreground="#E1BD77" FontFamily="Monotype Corsiva" FontSize="40" Width="auto" Height="60" Margin="0,0,10,0" />
+                <Label Name="username" Content="Log In, please" Foreground="#E1BD77" FontFamily="Monotype Corsiva" FontSize="30" Width="auto" Height="44" Margin="0,0,10,0" VerticalAlignment="Bottom" />
             </StackPanel>
         </StackPanel>
         <ScrollViewer Grid.Row="1">

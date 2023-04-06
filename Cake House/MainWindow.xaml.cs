@@ -24,35 +24,53 @@ namespace Cake_House
         {
             InitializeComponent();
         }
-
+        int enter = 0;
         private void LogClick(object sender, RoutedEventArgs e)
         {
-            Register reg = new Register();
-            Hide();
-            reg.ShowDialog();
+            if (log.Content == "Log out")
+            {
+                MessageBoxResult res = MessageBox.Show("You want to log out?", "Warning", MessageBoxButton.YesNo);
+                if (res == MessageBoxResult.No)
+                    return;
+                username.Content = "Log In, please";
+                enter = 0;
+                log.Content = "Log In";
+            }
+            else
+            {
+                Register reg = new Register();
+                reg.Owner = this;
+                Hide();
+                reg.ShowDialog();
+                username.Content = Name;
+                Name = "Cake_House";
+                reg.Close();
+                enter = 1;
+                log.Content = "Log out";
+            }
         }
 
         private void Levitate(object sender, MouseEventArgs e)
         {
             if (sender.ToString().Contains("About"))
             {
-                
+                about.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FDF5D3"));
             }
             else if (sender.ToString().Contains("Our"))
             {
-
+                reviews.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FDF5D3"));
             }
             else if (sender.ToString().Contains("Order"))
             {
-
+                order.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FDF5D3"));
             }
             else if (sender.ToString().Contains("Log"))
             {
-
+                log.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FDF5D3"));
             }
             else
             {
-
+                bracket.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FDF5D3"));
             }
         }
 
@@ -60,23 +78,23 @@ namespace Cake_House
         {
             if (sender.ToString().Contains("About"))
             {
-
+                about.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#E1BD77"));
             }
             else if (sender.ToString().Contains("Our"))
             {
-
+                reviews.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#E1BD77"));
             }
             else if (sender.ToString().Contains("Order"))
             {
-
+                order.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#E1BD77"));
             }
             else if (sender.ToString().Contains("Log"))
             {
-
+                log.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#E1BD77"));
             }
             else
             {
-
+                bracket.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#E1BD77"));
             }
         }
     }

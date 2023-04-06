@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cake_House"
         mc:Ignorable="d"
-        Title="Register" Height="370" Width="300"
-         Background="#DECAFC">
+        Title="Register" Height="400" Width="300"
+         Background="#DECAFC" Closed="Close">
     <Window.Resources>
         <Style TargetType="Button">
             <Setter Property="Template">
@@ -25,11 +25,11 @@
         <StackPanel>
             <Label Content="Cake House" FontFamily="Monotype Corsiva" FontSize="42" HorizontalAlignment="Center"></Label>
             <Label Content="Login" FontFamily="Monotype Corsiva" FontSize="28" HorizontalAlignment="Center" Margin="0,20,0,0"></Label>
-            <TextBox FontFamily="Monotype Corsiva" FontSize="28" Margin="20,0,20,0"></TextBox>
+            <TextBox Name="login" FontFamily="Monotype Corsiva" FontSize="28" Margin="20,0,20,0"></TextBox>
             <Label Content="Password" FontFamily="Monotype Corsiva" FontSize="28" HorizontalAlignment="Center"></Label>
-            <TextBox FontFamily="Monotype Corsiva" FontSize="28" Margin="20,0,20,0"></TextBox>
-            <Button Background="#E1BD77" Content="Log In" FontFamily="Monotype Corsiva" FontSize="28" Margin="20,20,20,0"></Button>
-            <Button Background="#E1BD77" Content="Sign in" FontFamily="Monotype Corsiva" FontSize="28" Margin="20,20,20,0"></Button>
+            <PasswordBox Name="pass" FontFamily="Monotype Corsiva" FontSize="28" Margin="20,0,20,0"></PasswordBox>
+            <Button Name="log" Background="#E1BD77" Content="Log In" FontFamily="Monotype Corsiva" FontSize="28" Margin="20,20,20,0" MouseEnter="Levitate" MouseLeave="Leave" Click="Logging"></Button>
+            <Button Name="sing" Background="#E1BD77" Content="Sign in" FontFamily="Monotype Corsiva" FontSize="28" Margin="20,20,20,0" MouseEnter="Levitate" MouseLeave="Leave"></Button>
         </StackPanel>
     </Grid>
 </Window>
