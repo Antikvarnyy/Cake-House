@@ -19,7 +19,17 @@
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>            
-        </Style>        
+        </Style>
+        <DataTemplate x:Key="LaptopTempalte">
+            <StackPanel Margin="10">
+                <Image Width="100" Height="75"  Source="{Binding Path=ImagePath}"/>
+                <TextBlock Padding="5" FontSize="18" Name="NoteTitle" Text="{Binding Path=Title}" HorizontalAlignment="Center" TextAlignment="Center"/>
+                <TextBlock Foreground="Gray" FontSize="17" Name="NotePrice" Text="{Binding Path=Price}" HorizontalAlignment="Center" TextAlignment="Center"/>
+            </StackPanel>
+        </DataTemplate>
+        <ItemsPanelTemplate x:Key="test1">
+            <WrapPanel/>
+        </ItemsPanelTemplate>
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -55,11 +65,12 @@
             </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Rectangle Fill="#FDF5D3" Width="20" Height="50"></Rectangle>
-                    <ComboBox x:Name="Price" Width="200" Height="50" FontFamily="Monotype Corsiva" FontSize="34"/>
-                    <ComboBox x:Name="Category" Width="400" Height="50" FontFamily="Monotype Corsiva" FontSize="34"/>
-                    <ComboBox x:Name="Weight" Width="200" Height="50" FontFamily="Monotype Corsiva" FontSize="34"/>
-                    <TextBox Background="#FDF5D3" Foreground="Gray" Text="Search..." Height="50" Width="445" FontFamily="Monotype Corsiva" FontSize="50"></TextBox>
+                    <ComboBox Name="Price" Width="200" Height="50" FontFamily="Monotype Corsiva" FontSize="34"/>
+                    <ComboBox Name="catg" Width="400" Height="50" FontFamily="Monotype Corsiva" FontSize="34"/>
+                    <ComboBox Name="Weight" Width="200" Height="50" FontFamily="Monotype Corsiva" FontSize="34"/>
+                    <TextBox Name="search" Background="#FDF5D3" Foreground="Gray" Text="Search..." Height="50" Width="445" FontFamily="Monotype Corsiva" FontSize="50" KeyDown="click"></TextBox>
                 </StackPanel>
+                <ListBox></ListBox>
             </StackPanel>
         </ScrollViewer>
     </Grid>

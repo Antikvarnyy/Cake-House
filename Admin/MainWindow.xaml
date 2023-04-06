@@ -19,12 +19,14 @@
                 <TextBox FontFamily="Monotype Corsiva" FontSize="28" Width="300"></TextBox>
                 <Label Content="Count:" FontFamily="Monotype Corsiva" FontSize="28"></Label>
                 <TextBox FontFamily="Monotype Corsiva" FontSize="28" Width="300"></TextBox>
+                <Label Content="Ingridients:" FontFamily="Monotype Corsiva" FontSize="28"></Label>
+                <TextBox FontFamily="Monotype Corsiva" FontSize="28" Width="300"></TextBox>
                 <Label Content="Price:" FontFamily="Monotype Corsiva" FontSize="28"></Label>
                 <TextBox FontFamily="Monotype Corsiva" FontSize="28" Width="300"></TextBox>
                 <Label Content="Picture:" FontFamily="Monotype Corsiva" FontSize="28"  Width="300"></Label>
                 <Button Background="#FDF5D3" FontFamily="Monotype Corsiva" FontSize="28" Content="Upload" Width="300"></Button>
                 <Label Content="" FontFamily="Monotype Corsiva" FontSize="28"></Label>
-                <Button Background="#FDF5D3" FontFamily="Monotype Corsiva" FontSize="28" Content="Create" FontWeight="Bold" Width="300" Margin="0,120,0,0"></Button>
+                <Button Background="#FDF5D3" FontFamily="Monotype Corsiva" FontSize="28" Content="Create" FontWeight="Bold" Width="300" Margin="0,46,0,0"></Button>
             </StackPanel>
             <Rectangle Fill="#473366" Width="2" Height="720"></Rectangle>
             <StackPanel Width="318">
