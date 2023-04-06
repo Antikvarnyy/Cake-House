@@ -24,5 +24,60 @@ namespace Cake_House
         {
             InitializeComponent();
         }
+
+        private void LogClick(object sender, RoutedEventArgs e)
+        {
+            Register reg = new Register();
+            Hide();
+            reg.ShowDialog();
+        }
+
+        private void Levitate(object sender, MouseEventArgs e)
+        {
+            if (sender.ToString().Contains("About"))
+            {
+                
+            }
+            else if (sender.ToString().Contains("Our"))
+            {
+
+            }
+            else if (sender.ToString().Contains("Order"))
+            {
+
+            }
+            else if (sender.ToString().Contains("Log"))
+            {
+
+            }
+            else
+            {
+
+            }
+        }
+
+        private void Leave(object sender, MouseEventArgs e)
+        {
+            if (sender.ToString().Contains("About"))
+            {
+
+            }
+            else if (sender.ToString().Contains("Our"))
+            {
+
+            }
+            else if (sender.ToString().Contains("Order"))
+            {
+
+            }
+            else if (sender.ToString().Contains("Log"))
+            {
+
+            }
+            else
+            {
+
+            }
+        }
     }
 }

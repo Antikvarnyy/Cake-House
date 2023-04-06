@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cake_House"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="1280"
+        Title="Cake House" Height="720" Width="1280"
         Background="#DECAFC">
     <Window.Resources>
         <Style TargetType="Button">
@@ -19,7 +19,7 @@
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>            
-        </Style>
+        </Style>        
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -27,15 +27,14 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <Rectangle Fill="#473366" Width="1280" Height="60"></Rectangle>        
-        <StackPanel Orientation="Horizontal">            
-            <Button Content="About us" Foreground="Black" FontFamily="Monotype Corsiva" FontSize="22" Width="90" Height="35" Margin="10,0,0,0" Background="#E1BD77"/>
-            <Button Content="Our reviews" Foreground="Black" FontFamily="Monotype Corsiva" FontSize="22" Width="150" Height="35" Margin="10,0,0,0" Background="#E1BD77"/>
-            <Button Content="Order for a date" Foreground="Black" FontFamily="Monotype Corsiva" FontSize="22" Width="170" Height="35" Margin="10,0,0,0" Background="#E1BD77"/>
+        <StackPanel Orientation="Horizontal">
+            <Button Name="about" Content="About us" Foreground="Black" FontFamily="Monotype Corsiva" FontSize="22" Width="90" Height="35" Margin="10,0,0,0" Background="#E1BD77" MouseEnter="Levitate" MouseLeave="Leave"/>
+            <Button Name="reviews" Content="Our reviews" Foreground="Black" FontFamily="Monotype Corsiva" FontSize="22" Width="150" Height="35" Margin="10,0,0,0" Background="#E1BD77" MouseEnter="Levitate" MouseLeave="Leave"/>
+            <Button Name="order" Content="Order for a date" Foreground="Black" FontFamily="Monotype Corsiva" FontSize="22" Width="170" Height="35" Margin="10,0,0,0" Background="#E1BD77" MouseEnter="Levitate" MouseLeave="Leave"/>
             <Label Content="Cake House" Foreground="#E1BD77" FontFamily="Monotype Corsiva" FontSize="40" Width="auto" Height="60" Margin="110,0,0,0" />
             <StackPanel Orientation="Horizontal" Width="540" FlowDirection="RightToLeft">
-                <Button Content="Log in" Foreground="Black" FontFamily="Monotype Corsiva" FontSize="22" Width="65" Height="35"  Background="#E1BD77" Margin="10,0,10,0"/>
-                <Button Content="Order for a date" Foreground="Black" FontFamily="Monotype Corsiva" FontSize="22" Width="170" Height="35" Margin="0,0,10,0" Background="#E1BD77"/>
-                <Button Foreground="Black" FontFamily="Monotype Corsiva" FontSize="22" Width="35" Height="35" Margin="0,0,10,0" Background="#E1BD77">
+                <Button Name="log" Content="Log in" Foreground="Black" FontFamily="Monotype Corsiva" FontSize="22" Width="65" Height="35"  Background="#E1BD77" Margin="10,0,10,0" Click="LogClick" MouseEnter="Levitate" MouseLeave="Leave"/>
+                <Button Name="bracket" Foreground="Black" FontFamily="Monotype Corsiva" FontSize="22" Width="35" Height="35" Margin="0,0,10,0" Background="#E1BD77" MouseEnter="Levitate" MouseLeave="Leave">
                     <Image Source="Recources/shopping-cart.png" Margin="5"></Image>
                 </Button>
                 <Label Content="username" Foreground="#E1BD77" FontFamily="Monotype Corsiva" FontSize="40" Width="auto" Height="60" Margin="0,0,10,0" />
